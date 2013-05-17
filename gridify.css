@@ -10,7 +10,7 @@
 /*****************************
  * The container
  *****************************/
-.container {
+.grid {
 	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
@@ -19,22 +19,23 @@
 /*****************************
  * General Styles
  *****************************/
-.container .one,
-.container .two,
-.container .three,
-.container .four,
-.container .five,
-.container .six,
-.container .seven,
-.container .eight,
-.container .nine,
-.container .ten,
-.container .eleven,
-.container .twelve,
-.container .thirteen,
-.container .fourteen,
-.container .fifteen,
-.container .sixteen {
+.grid .one-column,
+.grid .one-columns,
+.grid .two-columns,
+.grid .three-columns,
+.grid .four-columns,
+.grid .five-columns,
+.grid .six-columns,
+.grid .seven-columns,
+.grid .eight-columns,
+.grid .nine-columns,
+.grid .ten-columns,
+.grid .eleven-columns,
+.grid .twelve-columns,
+.grid .thirteen-columns,
+.grid .fourteen-columns,
+.grid .fifteen-columns,
+.grid .sixtee,-columns {
   display: inline;
   float: left;
   margin-left: 10px;
@@ -44,23 +45,23 @@
 /*****************************
  * Columns that share widths
  *****************************/
-.container.twelve .three,
-.container.sixteen .four {
+.grid.twelve .three-columns,
+.grid.sixteen .four-columns {
   width: 220px;
 }
 
-.container.twelve .six,
-.container.sixteen .eight {
+.grid.twelve .six-columns,
+.grid.sixteen .eight-columns {
   width: 460px;
 }
 
-.container.twelve .nine,
-.container.sixteen .twelve {
+.grid.twelve .nine-columns,
+.grid.sixteen .twelve-columns {
   width: 700px;
 }
 
-.container.twelve .twelve,
-.container.sixteen .sixteen {
+.grid.twelve .twelve-columns,
+.grid.sixteen .sixteen-columns {
   width: 940px;
 }
 
@@ -68,35 +69,36 @@
  * 12 Column Grid
  *****************************/
 
-.container.twelve .one {
+.grid.twelve .one-column,
+.grid.twelve .one-columns {
   width: 60px;
 }
 
-.container.twelve .two {
+.grid.twelve .two-columns {
   width: 140px;
 }
 
-.container.twelve .four {
+.grid.twelve .four-columns {
   width: 300px;
 }
 
-.container.twelve .five {
+.grid.twelve .five-columns {
   width: 380px;
 }
 
-.container.twelve .seven {
+.grid.twelve .seven-columns {
   width: 540px;
 }
 
-.container.twelve .eight {
+.grid.twelve .eight-columns {
   width: 620px;
 }
 
-.container.twelve .ten {
+.grid.twelve .ten-columns {
   width: 780px;
 }
 
-.container.twelve .eleven {
+.grid.twelve .eleven-columns {
   width: 860px;
 }
 
@@ -104,51 +106,52 @@
  * 16 Column Grid
  *****************************/
 
-.container.sixteen .one {
+.grid.sixteen .one-column,
+.grid.sixteen .one-columns {
   width: 40px;
 }
 
-.container.sixteen .two {
+.grid.sixteen .two-columns {
   width: 100px;
 }
 
-.container.sixteen .three{
+.grid.sixteen .three-columns{
   width: 160px;
 }
 
-.container.sixteen .five {
+.grid.sixteen .five-columns {
   width: 280px;
 }
 
-.container.sixteen .grid_6 {
+.grid.sixteen .six-columns {
   width: 340px;
 }
 
-.container.sixteen .seven {
+.grid.sixteen .seven-columns {
   width: 400px;
 }
 
-.container.sixteen .nine {
+.grid.sixteen .nine-columns {
   width: 520px;
 }
 
-.container.sixteen .ten {
+.grid.sixteen .ten-columns {
   width: 580px;
 }
 
-.container.sixteen .eleven {
+.grid.sixteen .eleven-columns {
   width: 640px;
 }
 
-.container.sixteen .thirteen {
+.grid.sixteen .thirteen-columns {
   width: 760px;
 }
 
-.container.sixteen .fourteen {
+.grid.sixteen .fourteen-columns {
   width: 820px;
 }
 
-.container.sixteen .fifteen {
+.grid.sixteen .fifteen-columns {
   width: 880px;
 }
 
@@ -156,11 +159,25 @@
  * Textual styles
  *****************************/
 
-.text {
+.two-text,
+.three-text,
+.four-text,
+.five-text,
+.six-text,
+.seven-text,
+.eight-text,
+.nine-text {
 	margin-top: 16px;
 }
 
-.text p {
+.two-text p,
+.three-text p,
+.four-text p,
+.five-text p,
+.six-text p,
+.seven-text p,
+.eight-text p,
+.nine-text p {
 	margin-top: 0;
 }
 
@@ -168,50 +185,50 @@
  * Textual columns
  *****************************/
 
-.text.two {
+.two-text {
 	column-count: 2;
 	-moz-column-count: 2;
 	-webkit-column-count: 2;
 }
 
 
-.text.three {
+.three-text {
 	column-count: 3;
 	-moz-column-count: 3;
 	-webkit-column-count: 3;
 }
 
-.text.four {
+.four-text {
 	column-count: 4;
 	-moz-column-count: 4;
 	-webkit-column-count: 4;
 }
 
-.text.five {
+.five-text {
 	column-count: 5;
 	-moz-column-count: 5;
 	-webkit-column-count: 5;
 }
 
-.text.six {
+.six-text {
 	column-count: 6;
 	-moz-column-count: 6;
 	-webkit-column-count: 6;
 }
 
-.text.seven {
+.seven-text {
 	column-count: 7;
 	-moz-column-count: 7;
 	-webkit-column-count: 7;
 }
 
-.text.eight {
+.eight-text {
 	column-count: 8;
 	-moz-column-count: 8;
 	-webkit-column-count: 8;
 }
 
-.text.nine {
+.nine-text {
 	column-count: 9;
 	-moz-column-count: 9;
 	-webkit-column-count: 9;
