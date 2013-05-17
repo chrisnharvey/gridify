@@ -69,6 +69,14 @@
 	width: 400px;
 }
 
+.text {
+	margin-top: 16px;
+}
+
+.text p {
+	margin-top: 0;
+}
+
 .text.two {
 	column-count: 2;
 	-moz-column-count: 2;
