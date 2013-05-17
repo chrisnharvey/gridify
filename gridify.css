@@ -14,6 +14,7 @@
 	width: 960px;
 }
 
+/* General styles */
 .container .one,
 .container .two,
 .container .three,
@@ -36,6 +37,7 @@
   margin-right: 10px;
 }
 
+/* Columns that share widths */
 .container.twelve .three,
 .container.sixteen .four {
   width: 220px;
@@ -56,18 +58,7 @@
   width: 940px;
 }
 
-.container.twelve .columns.one,
-.container.twelve .column.one {
-
-}
-
-.columns.two {
-	width: 100px;
-}
-
-.columns.eleven {
-	width: 400px;
-}
+/* Textual styles */
 
 .text {
 	margin-top: 16px;
@@ -76,6 +67,8 @@
 .text p {
 	margin-top: 0;
 }
+
+/* Textual columns */
 
 .text.two {
 	column-count: 2;
