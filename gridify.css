@@ -7,50 +7,112 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
+/* The container */
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
 
-.text-two {
+.container .one,
+.container .two,
+.container .three,
+.container .four,
+.container .five,
+.container .six,
+.container .seven,
+.container .eight,
+.container .nine,
+.container .ten,
+.container .eleven,
+.container .twelve,
+.container .thirteen,
+.container .fourteen,
+.container .fifteen,
+.container .sixteen {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container.twelve .three,
+.container.sixteen .four {
+  width: 220px;
+}
+
+.container.twelve .six,
+.container.sixteen .eight {
+  width: 460px;
+}
+
+.container.twelve .nine,
+.container.sixteen .twelve {
+  width: 700px;
+}
+
+.container.twelve .twelve,
+.container.sixteen .sixteen {
+  width: 940px;
+}
+
+.container.twelve .columns.one,
+.container.twelve .column.one {
+
+}
+
+.columns.two {
+	width: 100px;
+}
+
+.columns.eleven {
+	width: 400px;
+}
+
+.text.two {
 	column-count: 2;
 	-moz-column-count: 2;
 	-webkit-column-count: 2;
 }
 
-.text-three {
+
+.text.three {
 	column-count: 3;
 	-moz-column-count: 3;
 	-webkit-column-count: 3;
 }
 
-.text-four {
+.text.four {
 	column-count: 4;
 	-moz-column-count: 4;
 	-webkit-column-count: 4;
 }
 
-.text-five {
+.text.five {
 	column-count: 5;
 	-moz-column-count: 5;
 	-webkit-column-count: 5;
 }
 
-.text-six {
+.text.six {
 	column-count: 6;
 	-moz-column-count: 6;
 	-webkit-column-count: 6;
 }
 
-.text-seven {
+.text.seven {
 	column-count: 7;
 	-moz-column-count: 7;
 	-webkit-column-count: 7;
 }
 
-.text-eight {
+.text.eight {
 	column-count: 8;
 	-moz-column-count: 8;
 	-webkit-column-count: 8;
 }
 
-.text-nine {
+.text.nine {
 	column-count: 9;
 	-moz-column-count: 9;
 	-webkit-column-count: 9;
