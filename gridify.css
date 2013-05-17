@@ -7,14 +7,18 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
-/* The container */
+/*****************************
+ * The container
+ *****************************/
 .container {
 	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
 }
 
-/* General styles */
+/*****************************
+ * General Styles
+ *****************************/
 .container .one,
 .container .two,
 .container .three,
@@ -37,7 +41,9 @@
   margin-right: 10px;
 }
 
-/* Columns that share widths */
+/*****************************
+ * Columns that share widths
+ *****************************/
 .container.twelve .three,
 .container.sixteen .four {
   width: 220px;
@@ -58,7 +64,97 @@
   width: 940px;
 }
 
-/* Textual styles */
+/*****************************
+ * 12 Column Grid
+ *****************************/
+
+.container.twelve .one {
+  width: 60px;
+}
+
+.container.twelve .two {
+  width: 140px;
+}
+
+.container.twelve .four {
+  width: 300px;
+}
+
+.container.twelve .five {
+  width: 380px;
+}
+
+.container.twelve .seven {
+  width: 540px;
+}
+
+.container.twelve .eight {
+  width: 620px;
+}
+
+.container.twelve .ten {
+  width: 780px;
+}
+
+.container.twelve .eleven {
+  width: 860px;
+}
+
+/*****************************
+ * 16 Column Grid
+ *****************************/
+
+.container.sixteen .one {
+  width: 40px;
+}
+
+.container.sixteen .two {
+  width: 100px;
+}
+
+.container.sixteen .three{
+  width: 160px;
+}
+
+.container.sixteen .five {
+  width: 280px;
+}
+
+.container.sixteen .grid_6 {
+  width: 340px;
+}
+
+.container.sixteen .seven {
+  width: 400px;
+}
+
+.container.sixteen .nine {
+  width: 520px;
+}
+
+.container.sixteen .ten {
+  width: 580px;
+}
+
+.container.sixteen .eleven {
+  width: 640px;
+}
+
+.container.sixteen .thirteen {
+  width: 760px;
+}
+
+.container.sixteen .fourteen {
+  width: 820px;
+}
+
+.container.sixteen .fifteen {
+  width: 880px;
+}
+
+/*****************************
+ * Textual styles
+ *****************************/
 
 .text {
 	margin-top: 16px;
@@ -68,7 +164,9 @@
 	margin-top: 0;
 }
 
-/* Textual columns */
+/*****************************
+ * Textual columns
+ *****************************/
 
 .text.two {
 	column-count: 2;
