@@ -1,0 +1,57 @@
+/*
+* Gridify v0.1
+* Copyright 2013, Chris Harvey
+* www.gridifycss.com
+* 
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+
+.text-two {
+	column-count: 2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+}
+
+.text-three {
+	column-count: 3;
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+}
+
+.text-four {
+	column-count: 4;
+	-moz-column-count: 4;
+	-webkit-column-count: 4;
+}
+
+.text-five {
+	column-count: 5;
+	-moz-column-count: 5;
+	-webkit-column-count: 5;
+}
+
+.text-six {
+	column-count: 6;
+	-moz-column-count: 6;
+	-webkit-column-count: 6;
+}
+
+.text-seven {
+	column-count: 7;
+	-moz-column-count: 7;
+	-webkit-column-count: 7;
+}
+
+.text-eight {
+	column-count: 8;
+	-moz-column-count: 8;
+	-webkit-column-count: 8;
+}
+
+.text-nine {
+	column-count: 9;
+	-moz-column-count: 9;
+	-webkit-column-count: 9;
+}
