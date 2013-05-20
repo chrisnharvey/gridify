@@ -22,47 +22,35 @@
 /*****************************
  * General Styles
  *****************************/
-.grid .one-column,
-.grid .one-columns,
-.grid .two-columns,
-.grid .three-columns,
-.grid .four-columns,
-.grid .five-columns,
-.grid .six-columns,
-.grid .seven-columns,
-.grid .eight-columns,
-.grid .nine-columns,
-.grid .ten-columns,
-.grid .eleven-columns,
-.grid .twelve-columns,
-.grid .thirteen-columns,
-.grid .fourteen-columns,
-.grid .fifteen-columns,
-.grid .sixteen-columns {
+.grid .column,
+.grid .columns {
     display: inline;
+    position: relative;
     float: left;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*****************************
  * Columns that share widths
  *****************************/
-.grid.twelve .three-columns,
-.grid.sixteen .four-columns {
+.grid.twelve .three.columns,
+.grid.sixteen .four.columns {
     width: 220px;
 }
 
-.grid.twelve .six-columns,
-.grid.sixteen .eight-columns {
+.grid.twelve .six.columns,
+.grid.sixteen .eight.columns {
     width: 460px;
 }
 
-.grid.twelve .nine-columns,
-.grid.sixteen .twelve-columns {
+.grid.twelve .nine.columns,
+.grid.sixteen .twelve.columns {
     width: 700px;
 }
 
-.grid.twelve .twelve-columns,
-.grid.sixteen .sixteen-columns {
+.grid.twelve .twelve.columns,
+.grid.sixteen .sixteen.columns {
     width: 940px;
 }
 
@@ -70,36 +58,36 @@
  * 12 Column Grid
  *****************************/
 
-.grid.twelve .one-column,
-.grid.twelve .one-columns {
+.grid.twelve .one.column,
+.grid.twelve .one.columns {
     width: 60px;
 }
 
-.grid.twelve .two-columns {
+.grid.twelve .two.columns {
     width: 140px;
 }
 
-.grid.twelve .four-columns {
+.grid.twelve .four.columns {
     width: 300px;
 }
 
-.grid.twelve .five-columns {
+.grid.twelve .five.columns {
     width: 380px;
 }
 
-.grid.twelve .seven-columns {
+.grid.twelve .seven.columns {
     width: 540px;
 }
 
-.grid.twelve .eight-columns {
+.grid.twelve .eight.columns {
     width: 620px;
 }
 
-.grid.twelve .ten-columns {
+.grid.twelve .ten.columns {
     width: 780px;
 }
 
-.grid.twelve .eleven-columns {
+.grid.twelve .eleven.columns {
     width: 860px;
 }
 
@@ -107,52 +95,52 @@
  * 16 Column Grid
  *****************************/
 
-.grid.sixteen .one-column,
-.grid.sixteen .one-columns {
+.grid.sixteen .one.column,
+.grid.sixteen .one.columns {
     width: 40px;
 }
 
-.grid.sixteen .two-columns {
+.grid.sixteen .two.columns {
     width: 100px;
 }
 
-.grid.sixteen .three-columns{
+.grid.sixteen .three.columns {
     width: 160px;
 }
 
-.grid.sixteen .five-columns {
+.grid.sixteen .five.columns {
     width: 280px;
 }
 
-.grid.sixteen .six-columns {
+.grid.sixteen .six.columns {
     width: 340px;
 }
 
-.grid.sixteen .seven-columns {
+.grid.sixteen .seven.columns {
     width: 400px;
 }
 
-.grid.sixteen .nine-columns {
+.grid.sixteen .nine.columns {
     width: 520px;
 }
 
-.grid.sixteen .ten-columns {
+.grid.sixteen .ten.columns {
     width: 580px;
 }
 
-.grid.sixteen .eleven-columns {
+.grid.sixteen .eleven.columns {
     width: 640px;
 }
 
-.grid.sixteen .thirteen-columns {
+.grid.sixteen .thirteen.columns {
     width: 760px;
 }
 
-.grid.sixteen .fourteen-columns {
+.grid.sixteen .fourteen.columns {
     width: 820px;
 }
 
-.grid.sixteen .fifteen-columns {
+.grid.sixteen .fifteen.columns {
     width: 880px;
 }
 
@@ -225,23 +213,8 @@
 @media only screen and (max-width: 767px) {
     .grid.sixteen.responsive,
     .grid.sixteen.responsive .container,
-    .grid.sixteen.responsive .one-column,
-    .grid.sixteen.responsive .one-columns,
-    .grid.sixteen.responsive .two-columns,
-    .grid.sixteen.responsive .three-columns,
-    .grid.sixteen.responsive .four-columns,
-    .grid.sixteen.responsive .five-columns,
-    .grid.sixteen.responsive .six-columns,
-    .grid.sixteen.responsive .seven-columns,
-    .grid.sixteen.responsive .eight-columns,
-    .grid.sixteen.responsive .nine-columns,
-    .grid.sixteen.responsive .ten-columns,
-    .grid.sixteen.responsive .eleven-columns,
-    .grid.sixteen.responsive .twelve-columns,
-    .grid.sixteen.responsive .thirteen-columns,
-    .grid.sixteen.responsive .fourteen-columns,
-    .grid.sixteen.responsive .fifteen-columns,
-    .grid.sixteen.responsive .sixteen-columns {
+    .grid.sixteen.responsive .column,
+    .grid.sixteen.responsive .columns {
         width: 300px;
     }
 }
@@ -250,23 +223,8 @@
 @media only screen and (min-width: 480px) and  (max-width: 767px) {
     .grid.sixteen.responsive,
     .grid.sixteen.responsive .container,
-    .grid.sixteen.responsive .one-column,
-    .grid.sixteen.responsive .one-columns,
-    .grid.sixteen.responsive .two-columns,
-    .grid.sixteen.responsive .three-columns,
-    .grid.sixteen.responsive .four-columns,
-    .grid.sixteen.responsive .five-columns,
-    .grid.sixteen.responsive .six-columns,
-    .grid.sixteen.responsive .seven-columns,
-    .grid.sixteen.responsive .eight-columns,
-    .grid.sixteen.responsive .nine-columns,
-    .grid.sixteen.responsive .ten-columns,
-    .grid.sixteen.responsive .eleven-columns,
-    .grid.sixteen.responsive .twelve-columns,
-    .grid.sixteen.responsive .thirteen-columns,
-    .grid.sixteen.responsive .fourteen-columns,
-    .grid.sixteen.responsive .fifteen-columns,
-    .grid.sixteen.responsive .sixteen-columns {
+    .grid.sixteen.responsive .column,
+    .grid.sixteen.responsive .columns {
         width: 420px;
     }
 }
