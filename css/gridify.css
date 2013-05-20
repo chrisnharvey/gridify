@@ -224,6 +224,7 @@
 /* Smartphone (Portrait) */
 @media only screen and (max-width: 767px) {
     .grid.sixteen.responsive,
+    .grid.sixteen.responsive .container,
     .grid.sixteen.responsive .one-column,
     .grid.sixteen.responsive .one-columns,
     .grid.sixteen.responsive .two-columns,
@@ -248,6 +249,7 @@
 /* Smartphone (Landscape) */
 @media only screen and (min-width: 480px) and  (max-width: 767px) {
     .grid.sixteen.responsive,
+    .grid.sixteen.responsive .container,
     .grid.sixteen.responsive .one-column,
     .grid.sixteen.responsive .one-columns,
     .grid.sixteen.responsive .two-columns,
