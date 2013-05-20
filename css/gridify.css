@@ -162,23 +162,20 @@
  *****************************/
 
 .two-text,
-.three-text,
-.four-text,
-.five-text,
-.six-text,
-.seven-text,
-.eight-text,
-.nine-text {
-    margin-top: 0;
-}
-
 .two-text p,
+.three-text,
 .three-text p,
+.four-text,
 .four-text p,
+.five-text,
 .five-text p,
+.six-text,
 .six-text p,
+.seven-text,
 .seven-text p,
+.eight-text,
 .eight-text p,
+.nine-text,
 .nine-text p {
     margin-top: 0;
 }
