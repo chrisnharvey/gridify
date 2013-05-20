@@ -218,16 +218,6 @@
  * Responsive
  *****************************/
 
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-}
-
-/* Smartphone (Landscape) */
-@media only screen and (min-width: 480px) and  (max-width: 767px) {
-
-}
-
 /* Smartphone (Portrait) */
 @media only screen and (max-width: 767px) {
     .grid.sixteen.responsive,
@@ -250,4 +240,33 @@
     .grid.sixteen.responsive .sixteen-columns {
         width: 300px;
     }
+}
+
+/* Smartphone (Landscape) */
+@media only screen and (min-width: 480px) and  (max-width: 767px) {
+    .grid.sixteen.responsive,
+    .grid.sixteen.responsive .one-column,
+    .grid.sixteen.responsive .one-columns,
+    .grid.sixteen.responsive .two-columns,
+    .grid.sixteen.responsive .three-columns,
+    .grid.sixteen.responsive .four-columns,
+    .grid.sixteen.responsive .five-columns,
+    .grid.sixteen.responsive .six-columns,
+    .grid.sixteen.responsive .seven-columns,
+    .grid.sixteen.responsive .eight-columns,
+    .grid.sixteen.responsive .nine-columns,
+    .grid.sixteen.responsive .ten-columns,
+    .grid.sixteen.responsive .eleven-columns,
+    .grid.sixteen.responsive .twelve-columns,
+    .grid.sixteen.responsive .thirteen-columns,
+    .grid.sixteen.responsive .fourteen-columns,
+    .grid.sixteen.responsive .fifteen-columns,
+    .grid.sixteen.responsive .sixteen-columns {
+        width: 400px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
 }
