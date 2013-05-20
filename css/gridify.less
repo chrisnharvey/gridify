@@ -7,7 +7,9 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
-@import "gridify.css"
+@import "gridify.css";
+
+@pie: 'PIE/PIE.htc';
 
 .border-radius (@radius) {
   -webkit-border-radius: @radius;
@@ -15,5 +17,5 @@
   -ms-border-radius: @radius;
   -o-border-radius: @radius;
   border-radius: @radius;
-  behavior: url(PIE/PIE.php);
+  behavior: url(@pie);
 }
