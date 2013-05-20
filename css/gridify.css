@@ -241,5 +241,71 @@
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .grid.sixteen.responsive {
+        width: 769px;
+    }
+    
+    .grid.sixteen.responsive .one.column,
+    .grid.sixteen.responsive .one.columns {
+        width: 28px;
+    }
+    .grid.sixteen.responsive .two.columns {
+        width: 76px;
+    }
 
+    .grid.sixteen.responsive .three.columns {
+        width: 124px;
+    }
+
+    .grid.sixteen.responsive .four.columns {
+        width: 172px;
+    }
+
+    .grid.sixteen.responsive .five.columns {
+        width: 220px;
+    }
+
+    .grid.sixteen.responsive .six.columns {
+        width: 268px;
+    }
+
+    .grid.sixteen.responsive .seven.columns {
+        width: 316px;
+    }
+
+    .grid.sixteen.responsive .eight.columns {
+        width: 364px;
+    }
+
+    .grid.sixteen.responsive .nine.columns {
+        width: 412px;
+    }
+
+    .grid.sixteen.responsive .ten.columns {
+        width: 460px;
+    }
+
+    .grid.sixteen.responsive .eleven.columns {
+        width: 508px;
+    }
+
+    .grid.sixteen.responsive .twelve.columns {
+        width: 556px;
+    }
+
+    .grid.sixteen.responsive .thirteen.columns {
+        width: 604px;
+    }
+
+    .grid.sixteen.responsive .fourteen.columns {
+        width: 652px;
+    }
+
+    .grid.sixteen.responsive .fifteen.columns {
+        width: 700px;
+    }
+
+    .grid.sixteen.responsive .sixteen.columns {
+        width: 748px;
+    }
 }
