@@ -11,9 +11,9 @@
  * The container
  *****************************/
 .grid {
-	margin-left: auto;
-	margin-right: auto;
-	width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
 }
 
 /*****************************
@@ -35,11 +35,9 @@
 .grid .thirteen-columns,
 .grid .fourteen-columns,
 .grid .fifteen-columns,
-.grid .sixtee,-columns {
-  display: inline;
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+.grid .sixteen-columns {
+    display: inline;
+    float: left;
 }
 
 /*****************************
@@ -47,22 +45,22 @@
  *****************************/
 .grid.twelve .three-columns,
 .grid.sixteen .four-columns {
-  width: 220px;
+    width: 220px;
 }
 
 .grid.twelve .six-columns,
 .grid.sixteen .eight-columns {
-  width: 460px;
+    width: 460px;
 }
 
 .grid.twelve .nine-columns,
 .grid.sixteen .twelve-columns {
-  width: 700px;
+    width: 700px;
 }
 
 .grid.twelve .twelve-columns,
 .grid.sixteen .sixteen-columns {
-  width: 940px;
+    width: 940px;
 }
 
 /*****************************
@@ -71,35 +69,35 @@
 
 .grid.twelve .one-column,
 .grid.twelve .one-columns {
-  width: 60px;
+    width: 60px;
 }
 
 .grid.twelve .two-columns {
-  width: 140px;
+    width: 140px;
 }
 
 .grid.twelve .four-columns {
-  width: 300px;
+    width: 300px;
 }
 
 .grid.twelve .five-columns {
-  width: 380px;
+    width: 380px;
 }
 
 .grid.twelve .seven-columns {
-  width: 540px;
+    width: 540px;
 }
 
 .grid.twelve .eight-columns {
-  width: 620px;
+    width: 620px;
 }
 
 .grid.twelve .ten-columns {
-  width: 780px;
+    width: 780px;
 }
 
 .grid.twelve .eleven-columns {
-  width: 860px;
+    width: 860px;
 }
 
 /*****************************
@@ -108,51 +106,51 @@
 
 .grid.sixteen .one-column,
 .grid.sixteen .one-columns {
-  width: 40px;
+    width: 40px;
 }
 
 .grid.sixteen .two-columns {
-  width: 100px;
+    width: 100px;
 }
 
 .grid.sixteen .three-columns{
-  width: 160px;
+    width: 160px;
 }
 
 .grid.sixteen .five-columns {
-  width: 280px;
+    width: 280px;
 }
 
 .grid.sixteen .six-columns {
-  width: 340px;
+    width: 340px;
 }
 
 .grid.sixteen .seven-columns {
-  width: 400px;
+    width: 400px;
 }
 
 .grid.sixteen .nine-columns {
-  width: 520px;
+    width: 520px;
 }
 
 .grid.sixteen .ten-columns {
-  width: 580px;
+    width: 580px;
 }
 
 .grid.sixteen .eleven-columns {
-  width: 640px;
+    width: 640px;
 }
 
 .grid.sixteen .thirteen-columns {
-  width: 760px;
+    width: 760px;
 }
 
 .grid.sixteen .fourteen-columns {
-  width: 820px;
+    width: 820px;
 }
 
 .grid.sixteen .fifteen-columns {
-  width: 880px;
+    width: 880px;
 }
 
 /*****************************
@@ -167,7 +165,7 @@
 .seven-text,
 .eight-text,
 .nine-text {
-	margin-top: 16px;
+    margin-top: 16px;
 }
 
 .two-text p,
@@ -178,7 +176,7 @@
 .seven-text p,
 .eight-text p,
 .nine-text p {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 /*****************************
@@ -186,32 +184,32 @@
  *****************************/
 
 .two-text {
-	column-count: 2;
-	-moz-column-count: 2;
-	-webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
 }
 
 
 .three-text {
-	column-count: 3;
-	-moz-column-count: 3;
-	-webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
 }
 
 .four-text {
-	column-count: 4;
-	-moz-column-count: 4;
-	-webkit-column-count: 4;
+    column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
 }
 
 .five-text {
-	column-count: 5;
-	-moz-column-count: 5;
-	-webkit-column-count: 5;
+    column-count: 5;
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
 }
 
 .six-text {
-	column-count: 6;
-	-moz-column-count: 6;
-	-webkit-column-count: 6;
+    column-count: 6;
+    -moz-column-count: 6;
+    -webkit-column-count: 6;
 }
