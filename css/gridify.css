@@ -32,6 +32,19 @@
 }
 
 /*****************************
+ * Nested Columns (Alpha & Omege)
+ *****************************/
+.grid .column.alpha, 
+.grid .columns.alpha {
+    margin-left: 0;
+}
+
+.grid .column.omege, 
+.grid .columns.omege {
+    margin-left: 0;
+}
+
+/*****************************
  * Columns that share widths
  *****************************/
 .grid.twelve .three.columns,
