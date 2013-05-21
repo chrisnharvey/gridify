@@ -24,6 +24,7 @@
 	background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
 	background: -o-linear-gradient(@stop, @start);
 	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+	behavior: @pie;
 }
 
 .bw-gradient(@color: #F5F5F5, @start: 0, @stop: 255) {
@@ -33,6 +34,7 @@
 	background: -moz-linear-gradient(center bottom, rgb(@start, @start, @start) 0%, rgb(@stop, @stop, @stop) 100%);
 	background: -o-linear-gradient(rgb(@stop, @stop, @stop), rgb(@start, @start, @start));
 	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",rgb(@stop, @stop, @stop),rgb(@start, @start, @start)));
+	behavior: @pie;
 }
 
 .border(@top-color: #EEE, @right-color: #EEE, @bottom-color: #EEE, @left-color: #EEE) {
@@ -46,12 +48,14 @@
 	-webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
 	-moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
 	box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+	behavior: @pie;
 }
 
 .border-radius(@radius: 2px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius: @radius;
 	border-radius: @radius;
+	behavior: @pie;
 }
 
 .border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
@@ -114,12 +118,14 @@
 	-webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
 	-moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
 	box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+	behavior: @pie;
 }
 
 .box-shadow(@arguments) {
   -webkit-box-shadow: @arguments;
   -moz-box-shadow: @arguments;
   box-shadow: @arguments;
+  behavior: @pie;
 }
 
 .box-sizing(@sizing: border-box) {
