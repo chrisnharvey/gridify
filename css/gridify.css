@@ -32,15 +32,15 @@
 }
 
 /*****************************
- * Nested Columns (Alpha & Omege)
+ * Nested Columns (Alpha & Omega)
  *****************************/
 .grid .column.alpha, 
 .grid .columns.alpha {
     margin-left: 0;
 }
 
-.grid .column.omege, 
-.grid .columns.omege {
+.grid .column.omega, 
+.grid .columns.omega {
     margin-left: 0;
 }
 
