@@ -47,23 +47,23 @@
 /*****************************
  * Columns that share widths
  *****************************/
-.grid.twelve .three.columns,
-.grid.sixteen .four.columns {
+.grid.twelve .span-3,
+.grid.sixteen .span-4 {
     width: 220px;
 }
 
-.grid.twelve .six.columns,
-.grid.sixteen .eight.columns {
+.grid.twelve .span-6,
+.grid.sixteen .span-8 {
     width: 460px;
 }
 
-.grid.twelve .nine.columns,
-.grid.sixteen .twelve.columns {
+.grid.twelve .span-9,
+.grid.sixteen .span-12 {
     width: 700px;
 }
 
-.grid.twelve .twelve.columns,
-.grid.sixteen .sixteen.columns {
+.grid.twelve .span-12,
+.grid.sixteen .span-16 {
     width: 940px;
 }
 
@@ -71,36 +71,35 @@
  * 12 Column Grid
  *****************************/
 
-.grid.twelve .one.column,
-.grid.twelve .one.columns {
+.grid.twelve .span-1 {
     width: 60px;
 }
 
-.grid.twelve .two.columns {
+.grid.twelve .span-2 {
     width: 140px;
 }
 
-.grid.twelve .four.columns {
+.grid.twelve .span-4 {
     width: 300px;
 }
 
-.grid.twelve .five.columns {
+.grid.twelve .span-5 {
     width: 380px;
 }
 
-.grid.twelve .seven.columns {
+.grid.twelve .span-7 {
     width: 540px;
 }
 
-.grid.twelve .eight.columns {
+.grid.twelve .span-8 {
     width: 620px;
 }
 
-.grid.twelve .ten.columns {
+.grid.twelve .span-10 {
     width: 780px;
 }
 
-.grid.twelve .eleven.columns {
+.grid.twelve .span-11 {
     width: 860px;
 }
 
@@ -108,52 +107,51 @@
  * 16 Column Grid
  *****************************/
 
-.grid.sixteen .one.column,
-.grid.sixteen .one.columns {
+.grid.sixteen .span-1 {
     width: 40px;
 }
 
-.grid.sixteen .two.columns {
+.grid.sixteen .span-2 {
     width: 100px;
 }
 
-.grid.sixteen .three.columns {
+.grid.sixteen .span-3 {
     width: 160px;
 }
 
-.grid.sixteen .five.columns {
+.grid.sixteen .span-5 {
     width: 280px;
 }
 
-.grid.sixteen .six.columns {
+.grid.sixteen .span-6 {
     width: 340px;
 }
 
-.grid.sixteen .seven.columns {
+.grid.sixteen .span-7 {
     width: 400px;
 }
 
-.grid.sixteen .nine.columns {
+.grid.sixteen .span-9 {
     width: 520px;
 }
 
-.grid.sixteen .ten.columns {
+.grid.sixteen .span-10 {
     width: 580px;
 }
 
-.grid.sixteen .eleven.columns {
+.grid.sixteen .span-11 {
     width: 640px;
 }
 
-.grid.sixteen .thirteen.columns {
+.grid.sixteen .span-13 {
     width: 760px;
 }
 
-.grid.sixteen .fourteen.columns {
+.grid.sixteen .span-14 {
     width: 820px;
 }
 
-.grid.sixteen .fifteen.columns {
+.grid.sixteen .span-15 {
     width: 880px;
 }
 
@@ -245,67 +243,66 @@
         width: 769px;
     }
     
-    .grid.sixteen.responsive .one.column,
-    .grid.sixteen.responsive .one.columns {
+    .grid.sixteen.responsive .span-1 {
         width: 28px;
     }
-    .grid.sixteen.responsive .two.columns {
+    .grid.sixteen.responsive .span-2 {
         width: 76px;
     }
 
-    .grid.sixteen.responsive .three.columns {
+    .grid.sixteen.responsive .span-3 {
         width: 124px;
     }
 
-    .grid.sixteen.responsive .four.columns {
+    .grid.sixteen.responsive .span-4 {
         width: 172px;
     }
 
-    .grid.sixteen.responsive .five.columns {
+    .grid.sixteen.responsive .span-5 {
         width: 220px;
     }
 
-    .grid.sixteen.responsive .six.columns {
+    .grid.sixteen.responsive .span-6 {
         width: 268px;
     }
 
-    .grid.sixteen.responsive .seven.columns {
+    .grid.sixteen.responsive .span-7 {
         width: 316px;
     }
 
-    .grid.sixteen.responsive .eight.columns {
+    .grid.sixteen.responsive .span-8 {
         width: 364px;
     }
 
-    .grid.sixteen.responsive .nine.columns {
+    .grid.sixteen.responsive .span-9 {
         width: 412px;
     }
 
-    .grid.sixteen.responsive .ten.columns {
+    .grid.sixteen.responsive .span-10 {
         width: 460px;
     }
 
-    .grid.sixteen.responsive .eleven.columns {
+    .grid.sixteen.responsive .span-11 {
         width: 508px;
     }
 
-    .grid.sixteen.responsive .twelve.columns {
+    .grid.sixteen.responsive .span-12 {
         width: 556px;
     }
 
-    .grid.sixteen.responsive .thirteen.columns {
+    .grid.sixteen.responsive .span-13 {
         width: 604px;
     }
 
-    .grid.sixteen.responsive .fourteen.columns {
+    .grid.sixteen.responsive .span-14 {
         width: 652px;
     }
 
-    .grid.sixteen.responsive .fifteen.columns {
+    .grid.sixteen.responsive .span-15 {
         width: 700px;
     }
 
-    .grid.sixteen.responsive .sixteen.columns {
+    .grid.sixteen.responsive .span-16 {
         width: 748px;
     }
 }
