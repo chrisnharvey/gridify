@@ -7,145 +7,169 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
-@import "gridify.css";
+@width: 960px;
+@grid: 16;
 
-@pie: 'PIE/PIE.htc';
-
-
-/*---------------------------------------------------
-    Based on the awesome work by Dmitry Fadeyev
-    http://lesselements.com
-  ---------------------------------------------------*/
-
-.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
-	background: @color;
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop));
-	background: -ms-linear-gradient(bottom, @start, @stop);
-	background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
-	background: -o-linear-gradient(@stop, @start);
-	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+/*****************************
+ * The container
+ *****************************/
+.grid {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.bw-gradient(@color: #F5F5F5, @start: 0, @stop: 255) {
-	background: @color;
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(@start, @start, @start)), color-stop(1, rgb(@stop, @stop, @stop)));
-	background: -ms-linear-gradient(bottom, rgb(@start,@start,@start) 0%, rgb(@stop, @stop, @stop) 100%);
-	background: -moz-linear-gradient(center bottom, rgb(@start, @start, @start) 0%, rgb(@stop, @stop, @stop) 100%);
-	background: -o-linear-gradient(rgb(@stop, @stop, @stop), rgb(@start, @start, @start));
-	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",rgb(@stop, @stop, @stop),rgb(@start, @start, @start)));
+.grid, .container {
+    width: @width;
 }
 
-.border(@top-color: #EEE, @right-color: #EEE, @bottom-color: #EEE, @left-color: #EEE) {
-	border-top: solid 1px @top-color;
-	border-left: solid 1px @left-color;
-	border-right: solid 1px @right-color;
-	border-bottom: solid 1px @bottom-color;
+/*****************************
+ * General Styles
+ *****************************/
+.grid .column,
+.grid .columns {
+    display: inline;
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
-	-webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
-	-moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
-	box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
-	behavior: @pie;
+/*****************************
+ * Nested Columns (Alpha & Omega)
+ *****************************/
+.grid .column.alpha, 
+.grid .columns.alpha {
+    margin-left: 0;
 }
 
-.border-radius(@radius: 2px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius: @radius;
-	border-radius: @radius;
-	behavior: @pie;
+.grid .column.omega, 
+.grid .columns.omega {
+    margin-right: 0;
 }
 
-.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
-	-webkit-border-top-right-radius: @topright;
-	-webkit-border-bottom-right-radius: @bottomright;
-	-webkit-border-bottom-left-radius: @bottomleft;
-	-webkit-border-top-left-radius: @topleft;
-	-moz-border-radius-topright: @topright;
-	-moz-border-radius-bottomright: @bottomright;
-	-moz-border-radius-bottomleft: @bottomleft;
-	-moz-border-radius-topleft: @topleft;
-	border-top-right-radius: @topright;
-	border-bottom-right-radius: @bottomright;
-	border-bottom-left-radius: @bottomleft;
-	border-top-left-radius: @topleft;
-	.background-clip(padding-box);
+/*****************************
+ * Grid
+ *****************************/
+
+.grid-width(@cols) {
+	width: ((@width / @grid) * @cols - 20);
 }
 
-.opacity(@opacity: 0.5) {
-	-moz-opacity: @opacity;
-	-khtml-opacity: @opacity;
-	-webkit-opacity: @opacity;
-	opacity: @opacity;
-	@opperc: @opacity * 100;
-	-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
-	filter: ~"alpha(opacity=@{opperc})";
+.textual-grid(@cols) {
+	margin-top: 0;
+	column-count: @cols;
+    -moz-column-count: @cols;
+    -webkit-column-count: @cols;
 }
 
-.transition-duration(@duration: 0.2s) {
-	-moz-transition-duration: @duration;
-	-webkit-transition-duration: @duration;
-	-o-transition-duration: @duration;
-	transition-duration: @duration;
+.gridLoop (@index) when (@index > 0) {
+
+	.grid .span-@{index} {
+		.grid-width(@index);
+	}
+
+	.text-@{index} {
+		.textual-grid(@index);
+	}
+
+	.text-@{index} p {
+		margin-top: 0;
+	}
+
+	.gridLoop(@index - 1);
+}
+.gridLoop (0) {} .gridLoop (@grid);
+
+/*****************************
+ * Responsive
+ *****************************/
+
+/* Smartphone (Portrait) */
+@media only screen and (max-width: 767px) {
+    .grid-16.responsive,
+    .grid-16.responsive .container,
+    .grid-16.responsive .column,
+    .grid-16.responsive .columns {
+        width: 300px;
+    }
 }
 
-.transform(...) {
-	-webkit-transform: @arguments;
-	-moz-transform: @arguments;
-	-o-transform: @arguments;
-	-ms-transform: @arguments;
-	transform: @arguments;
+/* Smartphone (Landscape) */
+@media only screen and (min-width: 480px) and  (max-width: 767px) {
+    .grid-16.responsive,
+    .grid-16.responsive .container,
+    .grid-16.responsive .column,
+    .grid-16.responsive .columns {
+        width: 420px;
+    }
 }
 
-.rotate(@deg:5deg){
-	.transform(rotate(@deg));
-}
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .grid-16.responsive {
+        width: 769px;
+    }
+    
+    .grid-16.responsive .span-1 {
+        width: 28px;
+    }
+    .grid-16.responsive .span-2 {
+        width: 76px;
+    }
 
-.scale(@ratio:1.5){
-	.transform(scale(@ratio));
-}
+    .grid-16.responsive .span-3 {
+        width: 124px;
+    }
 
-.transition(@duration:0.2s, @ease:ease-out) {
-	-webkit-transition: all @duration @ease;
-	-moz-transition: all @duration @ease;
-	-o-transition: all @duration @ease;
-	transition: all @duration @ease;
-}
+    .grid-16.responsive .span-4 {
+        width: 172px;
+    }
 
-.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
-	-webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
-	-moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
-	box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
-	behavior: @pie;
-}
+    .grid-16.responsive .span-5 {
+        width: 220px;
+    }
 
-.box-shadow(@arguments) {
-  -webkit-box-shadow: @arguments;
-  -moz-box-shadow: @arguments;
-  box-shadow: @arguments;
-  behavior: @pie;
-}
+    .grid-16.responsive .span-6 {
+        width: 268px;
+    }
 
-.box-sizing(@sizing: border-box) {
-	-ms-box-sizing: @sizing;
-	-moz-box-sizing: @sizing;
-	-webkit-box-sizing: @sizing;
-	box-sizing: @sizing;
-}
+    .grid-16.responsive .span-7 {
+        width: 316px;
+    }
 
-.user-select(@argument: none) {
-	-webkit-user-select: @argument;
-	-moz-user-select: @argument;
-	-ms-user-select: @argument;
-	user-select: @argument;
-}
+    .grid-16.responsive .span-8 {
+        width: 364px;
+    }
 
-.translate(@x:0, @y:0) {
-	.transform(translate(@x, @y));
-}
+    .grid-16.responsive .span-9 {
+        width: 412px;
+    }
 
-.background-clip(@argument: padding-box) {
-	-moz-background-clip: @argument;
-	-webkit-background-clip: @argument;
-	background-clip: @argument;
+    .grid-16.responsive .span-10 {
+        width: 460px;
+    }
+
+    .grid-16.responsive .span-11 {
+        width: 508px;
+    }
+
+    .grid-16.responsive .span-12 {
+        width: 556px;
+    }
+
+    .grid-16.responsive .span-13 {
+        width: 604px;
+    }
+
+    .grid-16.responsive .span-14 {
+        width: 652px;
+    }
+
+    .grid-16.responsive .span-15 {
+        width: 700px;
+    }
+
+    .grid-16.responsive .span-16 {
+        width: 748px;
+    }
 }
