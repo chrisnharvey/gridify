@@ -97,86 +97,8 @@
     .grid.responsive .container,
     .grid.responsive .column,
     .grid.responsive .columns {
-        width: 300px;
+        .grid-width(@grid);
     }
 }
 
-/* Smartphone (Landscape) */
-@media only screen and (min-width: 480px) and  (max-width: 767px) {
-    .grid.responsive,
-    .grid.responsive .container,
-    .grid.responsive .column,
-    .grid.responsive .columns {
-        width: 420px;
-    }
-}
 
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-    .grid.responsive {
-        width: 769px;
-    }
-    
-    .grid.responsive .span-1 {
-        width: 28px;
-    }
-    .grid.responsive .span-2 {
-        width: 76px;
-    }
-
-    .grid.responsive .span-3 {
-        width: 124px;
-    }
-
-    .grid.responsive .span-4 {
-        width: 172px;
-    }
-
-    .grid.responsive .span-5 {
-        width: 220px;
-    }
-
-    .grid.responsive .span-6 {
-        width: 268px;
-    }
-
-    .grid.responsive .span-7 {
-        width: 316px;
-    }
-
-    .grid.responsive .span-8 {
-        width: 364px;
-    }
-
-    .grid.responsive .span-9 {
-        width: 412px;
-    }
-
-    .grid.responsive .span-10 {
-        width: 460px;
-    }
-
-    .grid.responsive .span-11 {
-        width: 508px;
-    }
-
-    .grid.responsive .span-12 {
-        width: 556px;
-    }
-
-    .grid.responsive .span-13 {
-        width: 604px;
-    }
-
-    .grid.responsive .span-14 {
-        width: 652px;
-    }
-
-    .grid.responsive .span-15 {
-        width: 700px;
-    }
-
-    .grid.responsive .span-16 {
-        width: 748px;
-    }
-}
