@@ -53,7 +53,7 @@
  *****************************/
 
 .grid-width(@cols) {
-	width: percentage((((@width / @grid) * @cols - @spacing) / @width));
+	width: percentage((((@width / @grid) * @cols - @spacing) / (@width + @spacing)));
 }
 
 .textual-grid(@cols) {
